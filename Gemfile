@@ -32,5 +32,4 @@ group :test do
   gem 'capybara-webkit'
   gem 'jasmine-headless-webkit'
   gem 'spork', '~> 0.9.0.rc'
-  gem 'turnip'
 end
