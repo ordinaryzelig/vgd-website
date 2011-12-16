@@ -17,8 +17,6 @@ development:
   encoding: unicode
   database: ventura_graphic_design_development
   pool: 5
-  username: ventura_graphic_design
-  password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
   # domain socket that doesn't need configuration. Windows does not have
@@ -43,13 +41,9 @@ test:
   encoding: unicode
   database: ventura_graphic_design_test
   pool: 5
-  username: ventura_graphic_design
-  password:
 
 production:
   adapter: postgresql
   encoding: unicode
   database: ventura_graphic_design_production
   pool: 5
-  username: ventura_graphic_design
-  password:
