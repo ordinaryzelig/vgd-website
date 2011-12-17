@@ -2,9 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
 $orange: rgb(249, 162, 94);
+$font-color: rgb(0, 79, 57);
 
 body {
 	background-color: white;
+	color: $font-color;
 	font-family: 'Quattrocento Sans', sans-serif;
 	margin: 0;
 }
