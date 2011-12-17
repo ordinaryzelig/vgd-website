@@ -1,9 +1,11 @@
 @import "compass";
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
 $orange: rgb(249, 162, 94);
 
 body {
 	background-color: white;
+	font-family: 'Quattrocento Sans', sans-serif;
 	margin: 0;
 }
 
