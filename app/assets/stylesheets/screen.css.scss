@@ -1,8 +1,12 @@
 @import "compass";
 @import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
 
+$base-font-size: 16px;
+$base-line-height: 24px;
 $orange: rgb(249, 162, 94);
 $font-color: rgb(0, 79, 57);
+
+@include establish-baseline;
 
 body {
 	background-color: white;
@@ -39,6 +43,7 @@ nav {
 	a {
 		@include unstyled-link;
 		display: block;
+		line-height: $base-font-size;
 		padding: 15px 30px;
 		text-transform: uppercase;
 	}
