@@ -1,8 +1,14 @@
 @import "compass";
 
 body {
-	background-image: image-url('background.jpg');
+	background-color: white;
 	margin: 0;
+}
+
+.page {
+	background-image: image-url('background.jpg');
+	margin: auto;
+	width: 1020px;
 }
 
 header {
