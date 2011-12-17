@@ -5,6 +5,7 @@ gem 'rails', '3.1.3'
 gem 'haml-rails'
 gem 'jquery-rails'
 gem 'pg'
+gem 'rack-canonical-host'
 gem 'thin'
 
 group :assets do
