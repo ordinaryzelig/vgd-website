@@ -5,14 +5,3 @@
  *= require_self
  *= require_tree . 
 */
-
-.logo {
-	background-image: url('/assets/logo.png');
-	height: 119px;
-	width: 288px;
-	margin: auto;
-}
-
-.logo span {
-	margin-left: -9999px;
-}

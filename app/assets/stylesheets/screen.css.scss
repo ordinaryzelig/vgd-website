@@ -1,0 +1,7 @@
+@import "compass";
+
+.logo {
+	@include replace-text-with-dimensions('logo.png');
+ 	margin: auto;
+}
+
