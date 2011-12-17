@@ -1,11 +1,13 @@
-@import "compass";
 @import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+@import "compass";
+@import "compass/reset";
 
 $base-font-size: 16px;
 $base-line-height: 24px;
 $orange: rgb(249, 162, 94);
 $font-color: rgb(0, 79, 57);
 $box-shadow-color: transparentize(black, 0.5);
+$divider-color: transparentize($orange, 0.75);
 
 $header-border-width: 3px;
 $header-padding: 10px;
@@ -28,49 +30,56 @@ body {
 	width: $page-width;
 }
 
-header {
+header.main {
 	background-image: image-url('background-header.jpg');
-	border-bottom: $header-border-width solid transparentize($orange, 0.75);
+	border-bottom: $header-border-width solid $divider-color;
 	padding: $header-padding 0px;
 	position: fixed;
 	top: 0px;
 	width: $page-width;
-}
 
-.logo {
-	@include replace-text-with-dimensions('logo.png');
- 	margin: auto;
-}
-
-nav {
-	ul {
-		list-style: none;
-		margin: 0;
-		padding: 0;
+	.logo {
+		@include replace-text-with-dimensions('logo.png');
+	 	margin: auto;
 	}
-	
-	a {
-		@include unstyled-link;
-		display: block;
-		line-height: $base-font-size;
-		padding: 15px 30px;
-		text-transform: uppercase;
+
+	nav {
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		a {
+			@include unstyled-link;
+			display: block;
+			line-height: $base-font-size;
+			padding: 15px 30px;
+			text-transform: uppercase;
+		}
 	}
-}
 
-#portfolio-link {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-}
+	#portfolio-link {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
 
-#contact-link {
-	position: absolute;
-	bottom: 0;
-	right: 0;
+	#contact-link {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
 }
 
 section {
 	padding-top: $header-height;
 	min-height: 1000px;
+	
+	header {
+		background-color: $divider-color;
+		h1 {
+			@include hide-text;
+		}
+	}
 }
