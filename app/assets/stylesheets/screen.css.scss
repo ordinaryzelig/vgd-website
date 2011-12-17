@@ -7,6 +7,11 @@ $orange: rgb(249, 162, 94);
 $font-color: rgb(0, 79, 57);
 $box-shadow-color: transparentize(black, 0.5);
 
+$header-border-width: 3px;
+$header-padding: 10px;
+$header-height: image-height('logo.png') + 2*$header-padding + $header-border-width;
+$page-width: 1020px;
+
 @include establish-baseline;
 
 body {
@@ -20,14 +25,16 @@ body {
 	@include single-box-shadow($color: $box-shadow-color, $blur: 5px);
 	background-image: image-url('background.jpg');
 	margin: auto;
-	width: 1020px;
+	width: $page-width;
 }
 
 header {
 	background-image: image-url('background-header.jpg');
-	border-bottom: 3px solid transparentize($orange, 0.75);
-	padding: 10px;
-	position: relative;
+	border-bottom: $header-border-width solid transparentize($orange, 0.75);
+	padding: $header-padding 0px;
+	position: fixed;
+	top: 0px;
+	width: $page-width;
 }
 
 .logo {
@@ -63,8 +70,13 @@ nav {
 	right: 0;
 }
 
+section {
+	padding-top: $header-height;
+	min-height: 1000px;
+}
+
 .prose {
-	@include padding-leader(1);
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 	width: 450px;
 }
