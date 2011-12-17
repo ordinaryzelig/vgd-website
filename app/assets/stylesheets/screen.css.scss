@@ -20,6 +20,7 @@ body {
 header {
 	background-image: image-url('background-header.jpg');
 	border-bottom: 3px solid transparentize($orange, 0.75);
+	padding: 10px;
 	position: relative;
 }
 
