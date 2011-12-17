@@ -1,5 +1,9 @@
 @import "compass";
 
+body {
+	background-image: image-url('background.jpg');
+}
+
 .logo {
 	@include replace-text-with-dimensions('logo.png');
  	margin: auto;
