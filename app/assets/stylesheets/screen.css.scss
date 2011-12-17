@@ -60,3 +60,9 @@ nav {
 	bottom: 0;
 	right: 0;
 }
+
+.prose {
+	@include padding-leader(1);
+	margin: auto;
+	width: 450px;
+}
