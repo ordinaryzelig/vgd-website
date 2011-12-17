@@ -1,5 +1,7 @@
 @import "compass";
 
+$orange: rgb(249, 162, 94);
+
 body {
 	background-color: white;
 	margin: 0;
@@ -13,6 +15,7 @@ body {
 
 header {
 	background-image: image-url('background-header.jpg');
+	border-bottom: 3px solid transparentize($orange, 0.75);
 }
 
 .logo {
