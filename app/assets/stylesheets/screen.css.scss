@@ -5,6 +5,7 @@ $base-font-size: 16px;
 $base-line-height: 24px;
 $orange: rgb(249, 162, 94);
 $font-color: rgb(0, 79, 57);
+$box-shadow-color: transparentize(black, 0.5);
 
 @include establish-baseline;
 
@@ -16,6 +17,7 @@ body {
 }
 
 .page {
+	@include single-box-shadow($color: $box-shadow-color, $blur: 5px);
 	background-image: image-url('background.jpg');
 	margin: auto;
 	width: 1020px;
