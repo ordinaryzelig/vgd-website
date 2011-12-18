@@ -92,6 +92,10 @@ section {
 		p {
 			@include margin-trailer(1);
 		}
+		
+		a {
+			color: $font-color;
+		}
 	}
 
 	strong {
