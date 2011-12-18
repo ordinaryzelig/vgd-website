@@ -40,7 +40,8 @@ header.main {
 	z-index: 10;
 
 	.logo {
-		@include replace-text-with-dimensions('logo.png');
+		height: image-height('logo.png');
+		width: image-width('logo.png');
 	 	margin: auto;
 	}
 
