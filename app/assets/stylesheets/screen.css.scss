@@ -3,7 +3,7 @@
 @import "compass/reset";
 
 $base-font-size: 16px;
-$base-line-height: 24px;
+$base-line-height: 32px;
 $orange: rgb(249, 162, 94);
 $font-color: rgb(0, 79, 57);
 $box-shadow-color: transparentize(black, 0.5);
@@ -78,6 +78,23 @@ section {
 			@include hide-text;
 			height: $section-header-height;
 		}
+	}
+
+	.prose {
+		@include adjust-font-size-to(20px);
+		@include margin-leader(1);
+		margin-right: auto;
+		margin-left: auto;
+		text-align: justify;
+		width: 500px;
+
+		p {
+			@include margin-trailer(1);
+		}
+	}
+
+	strong {
+		font-weight: bold;
 	}
 }
 
