@@ -75,7 +75,8 @@ section {
 	min-height: 800px;
 	
 	header {
-		background-color: $divider-color;
+	background-image: image-url('background-header.jpg');
+	/*	background-color: $divider-color;*/
 		h1 {
 			@include hide-text;
 			height: $section-header-height;
