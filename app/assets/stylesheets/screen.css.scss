@@ -2,12 +2,13 @@
 @import "compass";
 @import "compass/reset";
 
-$base-font-size: 16px;
-$base-line-height: 32px;
+$base-font-size: 23px;
+$base-line-height: 40px;
 $orange: rgb(249, 162, 94);
 $font-color: rgb(80, 80, 80);
 $box-shadow-color: transparentize(black, 0.5);
 $divider-color: transparentize($orange, 0.75);
+$background-color: #9dc4bf;
 
 $header-border-width: 3px;
 $header-padding: 10px;
@@ -17,7 +18,7 @@ $page-width: 1020px;
 @include establish-baseline;
 
 body {
-	background-color: #9dc4bf;
+	background-color: $background-color;
 	color: $font-color;
 /*	font-family: 'Quattrocento Sans', sans-serif;*/
 	font-family: "futura-pt",sans-serif;
@@ -85,7 +86,7 @@ section {
 	}
 
 	.prose {
-		@include adjust-font-size-to(20px);
+		@include adjust-font-size-to(23px);
 		@include margin-leader(1);
 		margin-right: auto;
 		margin-left: auto;
@@ -94,6 +95,7 @@ section {
 
 		p {
 			@include margin-trailer(1);
+			letter-spacing: 0.0425em;
 		}
 		
 		a {
@@ -104,6 +106,12 @@ section {
 	strong {
 		font-weight: 500;
 	}
+}
+
+#socialmedia {
+    background-color: transparentize($background-color, 0.75);
+    float: right;
+    padding: 10px 10px 0px 10px;
 }
 
 $slider-height: 522px;
