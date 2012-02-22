@@ -17,118 +17,118 @@ $page-width: 1020px;
 @include establish-baseline;
 
 body {
-	background-color: #9dc4bf;
-	color: $font-color;
-/*	font-family: 'Quattrocento Sans', sans-serif;*/
-	font-family: "futura-pt",sans-serif;
-	font-weight: 300;
-	margin: 0;
+  background-color: #9dc4bf;
+  color: $font-color;
+/*  font-family: 'Quattrocento Sans', sans-serif;*/
+  font-family: "futura-pt",sans-serif;
+  font-weight: 300;
+  margin: 0;
 }
 
 .page {
-	@include single-box-shadow($color: $box-shadow-color, $blur: 5px);
-	background-image: image-url('background.jpg');
-	margin: auto;
-	width: $page-width;
+  @include single-box-shadow($color: $box-shadow-color, $blur: 5px);
+  background-image: image-url('background.jpg');
+  margin: auto;
+  width: $page-width;
 }
 
 header.main {
-	background-image: image-url('background-header.jpg');
-/*	border-bottom: $header-border-width solid $divider-color;*/
-	padding: $header-padding 0px;
-	position: fixed;
-	top: 0px;
-	width: $page-width;
-	z-index: 10;
+  background-image: image-url('background-header.jpg');
+/*  border-bottom: $header-border-width solid $divider-color;*/
+  padding: $header-padding 0px;
+  position: fixed;
+  top: 0px;
+  width: $page-width;
+  z-index: 10;
 
-	.logo {
-		height: image-height('logo.png');
-		width: image-width('logo.png');
-	 	margin: auto;
-	}
+  .logo {
+    height: image-height('logo.png');
+    width: image-width('logo.png');
+    margin: auto;
+  }
 
-	nav {
-		a {
-			@include unstyled-link;
-			display: block;
-			line-height: $base-font-size;
-			padding: 15px 30px;
-			text-transform: uppercase;
-		}
-	}
+  nav {
+    a {
+      @include unstyled-link;
+      display: block;
+      line-height: $base-font-size;
+      padding: 15px 30px;
+      text-transform: uppercase;
+    }
+  }
 
-	#portfolio-link {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-	}
+  #portfolio-link {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-	#contact-link {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-	}
+  #contact-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
 
 $section-header-height: 25px;
 section {
-	padding-top: $header-height;
-	min-height: 800px;
-	
-	header {
-	background-image: image-url('background-header.jpg');
-	/*	background-color: $divider-color;*/
-		h1 {
-			@include hide-text;
-			height: $section-header-height;
-		}
-	}
+  padding-top: $header-height;
+  min-height: 800px;
 
-	.prose {
-		@include adjust-font-size-to(20px);
-		@include margin-leader(1);
-		margin-right: auto;
-		margin-left: auto;
-		text-align: justify;
-		width: 550px;
+  header {
+  background-image: image-url('background-header.jpg');
+  /*  background-color: $divider-color;*/
+    h1 {
+      @include hide-text;
+      height: $section-header-height;
+    }
+  }
 
-		p {
-			@include margin-trailer(1);
-		}
-		
-		a {
-			color: $font-color;
-		}
-	}
+  .prose {
+    @include adjust-font-size-to(20px);
+    @include margin-leader(1);
+    margin-right: auto;
+    margin-left: auto;
+    text-align: justify;
+    width: 550px;
 
-	strong {
-		font-weight: 500;
-	}
+    p {
+      @include margin-trailer(1);
+    }
+
+    a {
+      color: $font-color;
+    }
+  }
+
+  strong {
+    font-weight: 500;
+  }
 }
 
 $slider-height: 522px;
 $slider-margin-top: 30px;
 $slider-margin-side: 60px;
 #portfolio {
-	position: relative;
-	
-	#slider {
-		background-color: white;
-		height: $slider-height;
-		margin: $slider-margin-top $slider-margin-side;
-	}
-	
-	#previous {
-		@include replace-text-with-dimensions('left-arrow.png');
-		position: absolute;
-		left: ($slider-margin-side / 2) - (image-width('left-arrow.png') / 2);
-		top: ($slider-height / 2) - (image-height('left-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
-	}
+  position: relative;
 
-	#next {
-		@include replace-text-with-dimensions('right-arrow.png');
-		position: absolute;
-		right: ($slider-margin-side / 2) - (image-width('right-arrow.png') / 2);
-		top: ($slider-height / 2) - (image-height('right-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
-	}
+  #slider {
+    background-color: white;
+    height: $slider-height;
+    margin: $slider-margin-top $slider-margin-side;
+  }
+
+  #previous {
+    @include replace-text-with-dimensions('left-arrow.png');
+    position: absolute;
+    left: ($slider-margin-side / 2) - (image-width('left-arrow.png') / 2);
+    top: ($slider-height / 2) - (image-height('left-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
+  }
+
+  #next {
+    @include replace-text-with-dimensions('right-arrow.png');
+    position: absolute;
+    right: ($slider-margin-side / 2) - (image-width('right-arrow.png') / 2);
+    top: ($slider-height / 2) - (image-height('right-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
+  }
 }
