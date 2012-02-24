@@ -16,7 +16,12 @@
 <body>
   <div class="page">
     <header class="main">
-      <h1 class="logo"><a href="#about"><%= image_tag 'logo.png', :alt => 'Ventura Graphic Design' %></a></h1>
+      
+    <blog>
+        <h2 id='blog'><a href="http://blog.com/"><%= image_tag 'blog_button.png' %></a></h2>
+    </blog>
+      
+      <h1 class="logo"><a href="#about"><%= image_tag 'logo.png', :alt => 'Ventura Graphic Design' %></a></h1>  
       <nav>
         <ul>
           <li id='portfolio-link'><a href="#portfolio">Portfolio</a></li>
@@ -35,8 +40,8 @@
       </div>
       
       <ul id="socialmedia">
-        <li class="twitter"><a href="http://twitter.com/"><%= image_tag 'twitter.png' %></a></li>
-        <li class="facebook"><a href="http://facebook.com/"><%= image_tag 'facebook.png' %></a></li>
+        <li class="twitter"><a href="http://twitter.com/venturagd"><%= image_tag 'twitter.png' %></a></li>
+        <li class="facebook"><a href="http://facebook.com/venturagd/"><%= image_tag 'facebook.png' %></a></li>
         <li class="linkedin"><a href="http://linkedin.com/"><%= image_tag 'linkedin.png' %></a></li>
       </ul>
     </section>

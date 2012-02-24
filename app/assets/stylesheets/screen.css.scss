@@ -4,10 +4,10 @@
 
 $base-font-size: 23px;
 $base-line-height: 40px;
-$orange: rgb(249, 162, 94);
+$grey: rgb(80, 80, 80);
 $font-color: rgb(80, 80, 80);
 $box-shadow-color: transparentize(black, 0.5);
-$divider-color: #adceca;
+$teal: #adceca;
 $background-color: #f4fbfb;
 
 $header-border-width: 3px;
@@ -24,6 +24,9 @@ body {
 /*	font-family: 'Quattrocento Sans', sans-serif;*/
 	font-family: "futura-pt",sans-serif;
 	font-weight: 100;
+	strong {
+  font-weight: 400;
+	}
 	margin: 0;
 }
 
@@ -36,8 +39,9 @@ body {
 }
 
 header.main {
-	background-image: image-url('background-header.jpg');
+/*	background-image: image-url('background-header.jpg');*/
 /*	border-bottom: $header-border-width solid $divider-color;*/
+  background-color: $grey;
 	padding: $header-padding 0px;
 	position: fixed;
 	top: 0px;
@@ -49,6 +53,11 @@ header.main {
 		width: image-width('logo.png');
 	 	margin: auto;
 	}
+	
+	#blog {
+    float: right;
+    padding: 5px 30px;
+  }
 
 	nav {
 		a {
@@ -85,8 +94,8 @@ section {
 	min-height: 450px;
 	
 	header {
-	background-image: image-url('background-header.jpg');
-	/*	background-color: $divider-color;*/
+	/*background-image: image-url('background-header.jpg');*/
+	  background-color: $grey;
 		h1 {
 			@include hide-text;
 			height: $section-header-height;
@@ -111,14 +120,16 @@ section {
 		}
 	}
 
-	strong {
-		font-weight: 500;
-	}
+
+
+
+
+
 }
 
 #socialmedia {
    /* background-color: transparentize($background-color, 0.75);*/
-    background-color: transparentize($divider-color, 0.50);
+    background-color: transparentize($teal, 0.50);
     float: right;
     padding: 10px 10px 0px 10px;
 }
