@@ -7,8 +7,8 @@ $base-line-height: 40px;
 $orange: rgb(249, 162, 94);
 $font-color: rgb(80, 80, 80);
 $box-shadow-color: transparentize(black, 0.5);
-$divider-color: transparentize($orange, 0.75);
-$background-color: #9dc4bf;
+$divider-color: #adceca;
+$background-color: #f4fbfb;
 
 $header-border-width: 3px;
 $header-padding: 10px;
@@ -19,18 +19,20 @@ $page-width: 1020px;
 
 body {
 	background-color: $background-color;
+	background-image: image-url('background.jpg');
 	color: $font-color;
 /*	font-family: 'Quattrocento Sans', sans-serif;*/
 	font-family: "futura-pt",sans-serif;
-	font-weight: 300;
+	font-weight: 100;
 	margin: 0;
 }
 
 .page {
 	@include single-box-shadow($color: $box-shadow-color, $blur: 5px);
-	background-image: image-url('background.jpg');
 	margin: auto;
 	width: $page-width;
+	background-color: $background-color;
+	
 }
 
 header.main {
@@ -62,19 +64,25 @@ header.main {
 		position: absolute;
 		bottom: 0;
 		left: 0;
+		color: white;
+		font-size: 16px;
+		letter-spacing: 0.15em;
 	}
 
 	#contact-link {
 		position: absolute;
 		bottom: 0;
 		right: 0;
+		color: white;
+		font-size: 16px;
+		letter-spacing: 0.15em;
 	}
 }
 
 $section-header-height: 25px;
 section {
 	padding-top: $header-height;
-	min-height: 800px;
+	min-height: 450px;
 	
 	header {
 	background-image: image-url('background-header.jpg');
@@ -109,7 +117,8 @@ section {
 }
 
 #socialmedia {
-    background-color: transparentize($background-color, 0.75);
+   /* background-color: transparentize($background-color, 0.75);*/
+    background-color: transparentize($divider-color, 0.50);
     float: right;
     padding: 10px 10px 0px 10px;
 }
