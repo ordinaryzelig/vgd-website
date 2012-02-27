@@ -2,12 +2,13 @@
 @import "compass";
 @import "compass/reset";
 
-$base-font-size: 16px;
-$base-line-height: 32px;
-$orange: rgb(249, 162, 94);
+$base-font-size: 23px;
+$base-line-height: 40px;
+$grey: rgb(80, 80, 80);
 $font-color: rgb(80, 80, 80);
 $box-shadow-color: transparentize(black, 0.5);
-$divider-color: transparentize($orange, 0.75);
+$teal: #adceca;
+$background-color: #f4fbfb;
 
 $header-border-width: 3px;
 $header-padding: 10px;
@@ -17,93 +18,120 @@ $page-width: 1020px;
 @include establish-baseline;
 
 body {
-  background-color: #9dc4bf;
-  color: $font-color;
-/*  font-family: 'Quattrocento Sans', sans-serif;*/
-  font-family: "futura-pt",sans-serif;
-  font-weight: 300;
-  margin: 0;
+	background-color: $background-color;
+	background-image: image-url('background.jpg');
+	color: $font-color;
+/*	font-family: 'Quattrocento Sans', sans-serif;*/
+	font-family: "futura-pt",sans-serif;
+	font-weight: 100;
+	strong {
+  font-weight: 400;
+	}
+	margin: 0;
 }
 
 .page {
-  @include single-box-shadow($color: $box-shadow-color, $blur: 5px);
-  background-image: image-url('background.jpg');
-  margin: auto;
-  width: $page-width;
+	@include single-box-shadow($color: $box-shadow-color, $blur: 5px);
+	margin: auto;
+	width: $page-width;
+	background-color: $background-color;
+	
 }
 
 header.main {
-  background-image: image-url('background-header.jpg');
-/*  border-bottom: $header-border-width solid $divider-color;*/
-  padding: $header-padding 0px;
-  position: fixed;
-  top: 0px;
-  width: $page-width;
-  z-index: 10;
+/*	background-image: image-url('background-header.jpg');*/
+/*	border-bottom: $header-border-width solid $divider-color;*/
+  background-color: $grey;
+	padding: $header-padding 0px;
+	position: fixed;
+	top: 0px;
+	width: $page-width;
+	z-index: 10;
 
-  .logo {
-    height: image-height('logo.png');
-    width: image-width('logo.png');
-    margin: auto;
+	.logo {
+		height: image-height('logo.png');
+		width: image-width('logo.png');
+	 	margin: auto;
+	}
+	
+	#blog {
+    float: right;
+    padding: 5px 30px;
   }
 
-  nav {
-    a {
-      @include unstyled-link;
-      display: block;
-      line-height: $base-font-size;
-      padding: 15px 30px;
-      text-transform: uppercase;
-    }
-  }
+	nav {
+		a {
+			@include unstyled-link;
+			display: block;
+			line-height: $base-font-size;
+			padding: 15px 30px;
+			text-transform: uppercase;
+		}
+	}
 
-  #portfolio-link {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+	#portfolio-link {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		color: white;
+		font-size: 16px;
+		letter-spacing: 0.15em;
+	}
 
-  #contact-link {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-  }
+	#contact-link {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		color: white;
+		font-size: 16px;
+		letter-spacing: 0.15em;
+	}
 }
 
 $section-header-height: 25px;
 section {
-  padding-top: $header-height;
-  min-height: 800px;
+	padding-top: $header-height;
+	min-height: 450px;
+	
+	header {
+	/*background-image: image-url('background-header.jpg');*/
+	  background-color: $grey;
+		h1 {
+			@include hide-text;
+			height: $section-header-height;
+		}
+	}
 
-  header {
-  background-image: image-url('background-header.jpg');
-  /*  background-color: $divider-color;*/
-    h1 {
-      @include hide-text;
-      height: $section-header-height;
-    }
-  }
+	.prose {
+		@include adjust-font-size-to(23px);
+		@include margin-leader(1);
+		margin-right: auto;
+		margin-left: auto;
+		text-align: justify;
+		width: 550px;
 
-  .prose {
-    @include adjust-font-size-to(20px);
-    @include margin-leader(1);
-    margin-right: auto;
-    margin-left: auto;
-    text-align: justify;
-    width: 550px;
+		p {
+			@include margin-trailer(1);
+			letter-spacing: 0.0425em;
+		}
+		
+		a {
+			color: $font-color;
+		}
+	}
 
-    p {
-      @include margin-trailer(1);
-    }
 
-    a {
-      color: $font-color;
-    }
-  }
 
-  strong {
-    font-weight: 500;
-  }
+
+
+
+}
+
+#socialmedia {
+   /* background-color: transparentize($background-color, 0.75);*/
+    background-color: transparentize($teal, 0.50);
+    float: right;
+    padding: 10px 10px 0px 10px;
 }
 
 $slider-height: 522px;
