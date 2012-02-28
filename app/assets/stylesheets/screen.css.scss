@@ -101,7 +101,7 @@ section {
 		color: white;
 		font-size: 15px;
 		letter-spacing: 0.3em;
-		padding: 5px 30px;
+		padding: 3px 30px;
 		text-align: center
 	/*		@include hide-text;*/
 	/*	height: $section-header-height;*/
@@ -112,7 +112,7 @@ section {
 		@include adjust-font-size-to(23px);
 		@include margin-leader(1);
 		margin-right: auto;
-		margin-left: auto;
+		margin-left: 260px;
 		text-align: left;
 		width: 575px;
 
