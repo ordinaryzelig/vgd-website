@@ -97,11 +97,12 @@ section {
 	/*background-image: image-url('background-header.jpg');*/
 	  background-color: transparentize($grey, 0.2);
 		h1 {
-	/*	text-transform: uppercase;*/
+	  text-transform: uppercase;
 		color: white;
-		font-size: 20px;
-		letter-spacing: 0.15em;
+		font-size: 15px;
+		letter-spacing: 0.3em;
 		padding: 5px 30px;
+		text-align: center
 	/*		@include hide-text;*/
 	/*	height: $section-header-height;*/
 		}
