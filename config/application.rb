@@ -50,7 +50,7 @@ module VenturaGraphicDesign
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
-    
+
     # Redirect all requests to one canonical domain name.
     config.middleware.use 'Rack::CanonicalHost', ENV['CANONICAL_HOST']
   end

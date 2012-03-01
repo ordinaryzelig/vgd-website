@@ -138,25 +138,25 @@ $slider-height: 522px;
 $slider-margin-top: 30px;
 $slider-margin-side: 60px;
 #portfolio {
-	position: relative;
-	
-	#slider {
-		background-color: white;
-		height: $slider-height;
-		margin: $slider-margin-top $slider-margin-side;
-	}
-	
-	#previous {
-		@include replace-text-with-dimensions('left-arrow.png');
-		position: absolute;
-		left: ($slider-margin-side / 2) - (image-width('left-arrow.png') / 2);
-		top: ($slider-height / 2) - (image-height('left-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
-	}
+  position: relative;
 
-	#next {
-		@include replace-text-with-dimensions('right-arrow.png');
-		position: absolute;
-		right: ($slider-margin-side / 2) - (image-width('right-arrow.png') / 2);
-		top: ($slider-height / 2) - (image-height('right-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
-	}
+  #slider {
+    background-color: white;
+    height: $slider-height;
+    margin: $slider-margin-top $slider-margin-side;
+  }
+
+  #previous {
+    @include replace-text-with-dimensions('left-arrow.png');
+    position: absolute;
+    left: ($slider-margin-side / 2) - (image-width('left-arrow.png') / 2);
+    top: ($slider-height / 2) - (image-height('left-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
+  }
+
+  #next {
+    @include replace-text-with-dimensions('right-arrow.png');
+    position: absolute;
+    right: ($slider-margin-side / 2) - (image-width('right-arrow.png') / 2);
+    top: ($slider-height / 2) - (image-height('right-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
+  }
 }
