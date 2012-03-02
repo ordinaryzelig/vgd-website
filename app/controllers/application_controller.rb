@@ -4,8 +4,12 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  def require_authentication
+    redirect_to login_path unless authenticated?
+  end
+
   def authenticated?
-    request.authorization.present?
+    session[:authenticated]
   end
   helper_method :authenticated?
 

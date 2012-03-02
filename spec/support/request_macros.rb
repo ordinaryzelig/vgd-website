@@ -1,7 +1,9 @@
 module RequestMacros
 
   def login
-    page.driver.browser.basic_authorize(ENV['AUTH_NAME'], ENV['AUTH_PASSWORD'])
+    visit login_path
+    fill_in 'Password', with: ENV['AUTH_PASSWORD']
+    click_button 'Login'
   end
 
 end

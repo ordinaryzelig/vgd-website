@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
 
-  http_basic_authenticate_with name: ENV['AUTH_NAME'], password: ENV['AUTH_PASSWORD'], except: [:show, :index]
-  force_ssl
+  before_filter :require_authentication, except: [:show, :index]
 
   def index
     @articles = Article.all
