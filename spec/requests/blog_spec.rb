@@ -17,4 +17,22 @@ describe 'Blog' do
     page.should have_content(body)
   end
 
+  describe 'show page edit link' do
+
+    let(:article) { Article.create!(title: 'asdf', body: 'fdsa') }
+    let(:link)    { 'Edit' }
+
+    it 'is visible if authenticated' do
+      login
+      visit article_path(article)
+      page.should have_link(link)
+    end
+
+    it 'is hidden if not authenticated' do
+      visit article_path(article)
+      page.should_not have_link(link)
+    end
+
+  end
+
 end

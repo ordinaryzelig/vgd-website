@@ -5,6 +5,7 @@ gem 'rails', '3.1.3'
 gem 'haml-rails', '0.3.4'
 gem 'jquery-rails', '1.0.19'
 gem 'rack-canonical-host', '0.0.3'
+gem 'redcarpet', '2.1.0'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
@@ -20,6 +21,7 @@ end
 
 group :development do
   gem 'heroku'
+  gem 'rails-footnotes', '3.7.5'
 end
 
 group :development, :test do

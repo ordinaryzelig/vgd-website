@@ -1,12 +1,10 @@
 %p#notice= notice
 
+%h1= @article.title
 %p
-  %b Title:
-  = @article.title
-%p
-  %b Body:
-  = @article.body
+  = markdown(@article.body)
 
-= link_to 'Edit', edit_article_path(@article)
-\|
+-if authenticated?
+  = link_to 'Edit', edit_article_path(@article)
+  \|
 = link_to 'Back', articles_path
