@@ -18,7 +18,7 @@
     <header class="main">
       
     <blog>
-        <h2 id='blog'><a href="http://blog.com/"><%= image_tag 'blog-button.png' %></a></h2>
+        <h2 id='blog'><%= link_to image_tag('blog-button.png'), blog_path %></h2>
     </blog>
       
       <h1 class="logo"><a href="#about"><%= image_tag 'logo.png', :alt => 'Ventura Graphic Design' %></a></h1>  

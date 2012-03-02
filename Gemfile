@@ -2,9 +2,9 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
-gem 'haml-rails'
-gem 'jquery-rails'
-gem 'rack-canonical-host'
+gem 'haml-rails', '0.3.4'
+gem 'jquery-rails', '1.0.19'
+gem 'rack-canonical-host', '0.0.3'
 
 group :assets do
   gem 'coffee-rails', '~> 3.1.1'
@@ -23,5 +23,11 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3'
+  gem 'sqlite3', '1.3.5'
+  gem 'spork', '0.9.0'
+end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'rspec-rails', '2.8.1'
 end
