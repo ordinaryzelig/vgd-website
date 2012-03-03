@@ -12,6 +12,39 @@
 <script type="text/javascript" src="http://use.typekit.com/nxm3daf.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
+
+
+
+<link rel="shortcut icon" href="demos/images/favicon.ico">
+<link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png">
+
+<!-- jQuery (required) -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+<!-- Anything Slider -->
+<link rel="stylesheet" href="app/assets/stylesheets/anythingslider.css">
+<script src="js/jquery.anythingslider.js"></script>
+
+<!-- AnythingSlider optional extensions -->
+<!-- <script src="js/jquery.anythingslider.fx.js"></script> -->
+<!-- <script src="js/jquery.anythingslider.video.js"></script> -->
+
+<!-- Define slider dimensions here -->
+<style>
+#slider { width: 900px; height: 522px; }
+</style>
+
+<!-- AnythingSlider initialization -->
+<script>
+	// DOM Ready
+	$(function(){
+		$('#slider').anythingSlider();
+	});
+</script>
+
+
+
 </head>
 <body> 
   <div class="page">
@@ -49,9 +82,10 @@
     
     <section id="portfolio">
       <header>
-        <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe best way to predict the future is to design it.&nbsp&nbsp&nbsp<font size="1.75">— Buckminster Fuller</font></h1>
+        <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe best way to predict the future is to design it.&nbsp&nbsp&nbsp<font size="1.75">— Buckminster Fuller</font></h1>        
       </header>
       
+      <!--
       <div id="slider">
         <%= image_tag 'portfolio-cookies.png' %>
       </div>
@@ -62,7 +96,35 @@
           <li id="next">Next</li>
         </ul>
       </nav>
+    </section>-->
+    
+    
+    
+    
+    <body id="simple">
+    	<!-- Simple AnythingSlider -->
+
+    	<ul id="slider">
+
+    		<li><img src="portfolio-amani.png" alt=""></li>
+
+    		<li><img src="demos/images/slide-env-1.jpg" alt=""></li>
+
+    		<li><img src="demos/images/slide-civil-2.jpg" alt=""></li>
+
+    		<li><img src="demos/images/slide-env-2.jpg" alt=""></li>
+
+    	</ul>
+
+    	<!-- END AnythingSlider -->
+
+    </body>
+    
+    
+    
+    
     </section>
+    
     <section id="contact">
        <header>
           <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA design isn’t finished until somebody is using it. &nbsp&nbsp&nbsp<font size="1.75">— Brenda Laurel</font></h1>
