@@ -36,4 +36,7 @@ VenturaGraphicDesign::Application.configure do
 
   # Print deprecation notices to the stderr
   config.active_support.deprecation = :stderr
+
+  ENV['AUTH_NAME'] = 'asdf'
+  ENV['AUTH_PASSWORD'] = 'asdf'
 end

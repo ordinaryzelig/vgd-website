@@ -88,9 +88,12 @@ header.main {
 	}
 }
 
+#content {
+  margin-top: $header-height;
+}
+
 $section-header-height: 40px;
 section {
-	padding-top: $header-height;
 	min-height: 766px;
 	
 	header {

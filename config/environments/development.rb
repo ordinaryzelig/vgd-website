@@ -27,4 +27,7 @@ VenturaGraphicDesign::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  ENV['AUTH_NAME'] = 'asdf'
+  ENV['AUTH_PASSWORD'] = 'asdf'
 end
