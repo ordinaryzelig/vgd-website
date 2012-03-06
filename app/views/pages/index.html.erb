@@ -1,161 +1,83 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Ventura Graphic Design</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%= stylesheet_link_tag "application" %>
-  <%= csrf_meta_tags %>
+<section id="about">
+  <div class="prose">
+    <p>Ventura Graphic Design helps <strong>committed</strong> nonprofits, <strong>socially&#x2011;responsible</strong> campaigns, and <strong>ethical</strong> businesses solve their communications, marketing, and branding needs.</p>
 
-<script type="text/javascript" src="http://use.typekit.com/nxm3daf.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <p>Our <strong>super-creative</strong> team is passionate about thoughtful design that tells a great story.</p>
 
-
-
-<!== I added the below, trying for the portfolio slider>
-<link rel="shortcut icon" href="demos/images/favicon.ico">
-<link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png">
-
-<!-- jQuery (required) -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-
-<!-- Anything Slider -->
-<link rel="stylesheet" href="app/assets/stylesheets/anythingslider.css">
-<script src="js/jquery.anythingslider.js"></script>
-
-<!-- AnythingSlider optional extensions -->
-<!-- <script src="js/jquery.anythingslider.fx.js"></script> -->
-<!-- <script src="js/jquery.anythingslider.video.js"></script> -->
-
-<!-- Define slider dimensions here -->
-<style>
-#slider { width: 900px; height: 522px; }
-</style>
-
-<!-- AnythingSlider initialization -->
-<script>
-	// DOM Ready
-	$(function(){
-		$('#slider').anythingSlider();
-	});
-</script>
-
-
-
-
-
-</head>
-<body> 
-  <div class="page">
-    <header class="main">
-      
-    <blog>
-        <h2 id='blog'><a href="http://blog.com/"><%= image_tag 'blog-button.png' %></a></h2>
-    </blog>
-      
-      <h1 class="logo"><a href="#about"><%= image_tag 'logo.png', :alt => 'Ventura Graphic Design' %></a></h1>  
-      <nav>
-        <ul>
-          <li id='portfolio-link'><a href="#portfolio">Portfolio</a></li>
-          <li id='contact-link'><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="about">
-      <div class="prose">
-        <p>Ventura Graphic Design helps <strong>committed</strong> nonprofits, <strong>socially&#x2011;responsible</strong> campaigns, and <strong>ethical</strong> businesses solve their communications, marketing, and branding needs.</p>
-
-        <p>Our <strong>super-creative</strong> team is passionate about thoughtful design that tells a great story.</p>
-
-        <p><strong>Let us tell yours.</strong></p>
-      </div>
-      
-      <ul id="socialmedia">
-        <li class="twitter"><a href="http://twitter.com/venturagd"><%= image_tag 'twitter.png' %></a></li>
-        <li class="facebook"><a href="http://facebook.com/venturagd/"><%= image_tag 'facebook.png' %></a></li>
-        <li class="linkedin"><a href="http://www.linkedin.com/pub/libby-ventura/31/b44/a44"><%= image_tag 'linkedin.png' %></a></li>
-      </ul>
-    </section>
-  
-    
-    <section id="portfolio">
-      <header>
-        <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe best way to predict the future is to design it.&nbsp&nbsp&nbsp<font size="1.75">— Buckminster Fuller</font></h1>        
-      </header>
-      
-      <!--
-      <div id="slider">
-        <%= image_tag 'portfolio-cookies.png' %>
-      </div>
-      
-      <nav>
-        <ul>
-          <li id="previous">Previous</li>
-          <li id="next">Next</li>
-        </ul>
-      </nav>
-    </section>-->
-    
-    
-    
-  <!--I added this trying for the portfolio slider>  
-    <body id="simple">
-    	<!-- Simple AnythingSlider -->
-
-    	<ul id="slider">
-
-    		<li><img src="portfolio-amani.png" alt=""></li>
-
-    		<li><img src="demos/images/slide-env-1.jpg" alt=""></li>
-
-    		<li><img src="demos/images/slide-civil-2.jpg" alt=""></li>
-
-    		<li><img src="demos/images/slide-env-2.jpg" alt=""></li>
-
-    	</ul>
-
-    	<!-- END AnythingSlider -->
-
-    </body>
-    
-    
-    
-    
-    </section>
-    
-    <section id="contact">
-       <header>
-          <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA design isn’t finished until somebody is using it. &nbsp&nbsp&nbsp<font size="1.75">— Brenda Laurel</font></h1>
-        </header>
-      <div class="prose">
-        <p>
-          If you’re excited about the future of your organization, then I’m excited to help you get there. <p>Let’s talk soon about how we can work together. </p>
-        </p>
-        <p>
-        <a href="mailto:hello@venturagraphicdesign.com"><image style="padding: 0px 10px 0px 0px;margin-bottom:-4px;"<%= image_tag 'envelope.png' %>  
-        <%= mail_to 'hello@venturagraphicdesign.com', nil, :encode => 'javascript' %>
-        </p>
-        <p>
-          <image style="padding: 0px 15px 0px 5px;margin-bottom:-10px;"<%= image_tag 'phone.png' %>(415) 710–1301
-        </p>
-        <a href="http://twitter.com/venturagd"><image style="padding-left:1px;"><%= image_tag 'twitter.png' %><font style="position: relative; top: -10px;
-        ">&nbsp&nbsp&nbsptwitter.com/venturagd&nbsp&nbsp&nbsp&nbsp</a> </font>
-        
-       <a href="http://facebook.com/venturagd/"><%= image_tag 'facebook.png' %> <font style="position: relative; top: -10px;
-        ">&nbsp&nbspfb.com/venturagd&nbsp&nbsp&nbsp&nbsp</a></image></font>
-       
-        <a href="http://www.linkedin.com/pub/libby-ventura/31/b44/a44"><%= image_tag 'linkedin.png' %><font style="position: relative; top: -10px;
-        ">&nbsp&nbsp&nbsplinkedin.com/in/venturagd</a></image></font>
-        
-       <br> <p>
-         <font style="text-transform: uppercase;font-size: 15px;  letter-spacing: 0.3em;position: relative; top: 30px;"><strong>Want to see more of my work? </strong></font><br><font style="position: relative; top: 30px;">Feel free to contact me and I’d be happy to email you my full portfolio.</font>
-        </p>
-      </div>
-    </section>
+    <p><strong>Let us tell yours.</strong></p>
   </div>
+
+  <ul id="socialmedia">
+    <li class="twitter"><a href="http://twitter.com/venturagd"><%= image_tag 'twitter.png' %></a></li>
+    <li class="facebook"><a href="http://facebook.com/venturagd/"><%= image_tag 'facebook.png' %></a></li>
+    <li class="linkedin"><a href="http://www.linkedin.com/pub/libby-ventura/31/b44/a44"><%= image_tag 'linkedin.png' %></a></li>
+  </ul>
+</section>
+
+<section id="portfolio">
+  <header>
+    <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe best way to predict the future is to design it.&nbsp&nbsp&nbsp<font size="1.75">— Buckminster Fuller</font></h1>
+  </header>
+  <!--
+  <div id="slider">
+    <%= image_tag 'portfolio-cookies.png' %>
+  </div>
+
+  <nav>
+    <ul>
+      <li id="previous">Previous</li>
+      <li id="next">Next</li>
+    </ul>
+  </nav>
+</section>-->
+
+<body id="simple">
+  <!-- Simple AnythingSlider -->
+
+  <ul id="slider">
+
+    <li><img src="portfolio-amani.png" alt=""></li>
+
+    <li><img src="demos/images/slide-env-1.jpg" alt=""></li>
+
+    <li><img src="demos/images/slide-civil-2.jpg" alt=""></li>
+
+    <li><img src="demos/images/slide-env-2.jpg" alt=""></li>
+
+  </ul>
+
+  <!-- END AnythingSlider -->
+
 </body>
-</html>
+
+</section>
+
+<section id="contact">
+   <header>
+      <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA design isn’t finished until somebody is using it. &nbsp&nbsp&nbsp<font size="1.75">— Brenda Laurel</font></h1>
+    </header>
+  <div class="prose">
+    <p>
+      If you’re excited about the future of your organization, then I’m excited to help you get there. <p>Let’s talk soon about how we can work together. </p>
+    </p>
+    <p>
+    <a href="mailto:hello@venturagraphicdesign.com"><image style="padding: 0px 10px 0px 0px;margin-bottom:-4px;"<%= image_tag 'envelope.png' %>
+    <%= mail_to 'hello@venturagraphicdesign.com', nil, :encode => 'javascript' %>
+    </p>
+    <p>
+      <image style="padding: 0px 15px 0px 5px;margin-bottom:-10px;"<%= image_tag 'phone.png' %>(415) 710–1301
+    </p>
+    <a href="http://twitter.com/venturagd"><image style="padding-left:1px;"><%= image_tag 'twitter.png' %><font style="position: relative; top: -10px;
+    ">&nbsp&nbsp&nbsptwitter.com/venturagd&nbsp&nbsp&nbsp&nbsp</a> </font>
+
+   <a href="http://facebook.com/venturagd/"><%= image_tag 'facebook.png' %> <font style="position: relative; top: -10px;
+    ">&nbsp&nbspfb.com/venturagd&nbsp&nbsp&nbsp&nbsp</a></image></font>
+
+    <a href="http://www.linkedin.com/pub/libby-ventura/31/b44/a44"><%= image_tag 'linkedin.png' %><font style="position: relative; top: -10px;
+    ">&nbsp&nbsp&nbsplinkedin.com/in/venturagd</a></image></font>
+
+   <br> <p>
+     <font style="text-transform: uppercase;font-size: 15px;  letter-spacing: 0.3em;position: relative; top: 30px;"><strong>Want to see more of my work? </strong></font><br><font style="position: relative; top: 30px;">Feel free to contact me and I’d be happy to email you my full portfolio.</font>
+    </p>
+  </div>
+</section>

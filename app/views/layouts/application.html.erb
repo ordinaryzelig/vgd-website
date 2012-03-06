@@ -1,1 +1,55 @@
-<%= yield %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Ventura Graphic Design</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= stylesheet_link_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <script type="text/javascript" src="http://use.typekit.com/nxm3daf.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <link rel="shortcut icon" href="demos/images/favicon.ico">
+  <link rel="apple-touch-icon" href="demos/images/apple-touch-icon.png">
+
+</head>
+
+<body>
+
+  <div class="page">
+
+    <header class="main">
+
+      <blog>
+        <h2 id='blog'><%= link_to(image_tag('blog-button.png'), blog_path) %></a></h2>
+      </blog>
+
+      <h1 class="logo"><a href="#about"><%= image_tag 'logo.png', :alt => 'Ventura Graphic Design' %></a></h1>
+
+      <nav>
+        <ul>
+          <li id='portfolio-link'><a href="#portfolio">Portfolio</a></li>
+          <li id='contact-link'><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <% if authenticated? %>
+      <%= link_to 'Logout', logout_path %>
+    <% end %>
+
+    <div id="content">
+      <%= yield %>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
