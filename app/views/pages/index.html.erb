@@ -1,3 +1,4 @@
+<!-- About. -->
 <section id="about">
   <div class="prose">
     <p>Ventura Graphic Design helps <strong>committed</strong> nonprofits, <strong>socially&#x2011;responsible</strong> campaigns, and <strong>ethical</strong> businesses solve their communications, marketing, and branding needs.</p>
@@ -14,44 +15,22 @@
   </ul>
 </section>
 
+<!-- Portfolio. -->
 <section id="portfolio">
+
   <header>
     <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe best way to predict the future is to design it.&nbsp&nbsp&nbsp<font size="1.75">— Buckminster Fuller</font></h1>
   </header>
-  <!--
-  <div id="slider">
-    <%= image_tag 'portfolio-cookies.png' %>
-  </div>
-
-  <nav>
-    <ul>
-      <li id="previous">Previous</li>
-      <li id="next">Next</li>
-    </ul>
-  </nav>
-</section>-->
-
-<body id="simple">
-  <!-- Simple AnythingSlider -->
 
   <ul id="slider">
-
-    <li><img src="portfolio-amani.png" alt=""></li>
-
-    <li><img src="demos/images/slide-env-1.jpg" alt=""></li>
-
-    <li><img src="demos/images/slide-civil-2.jpg" alt=""></li>
-
-    <li><img src="demos/images/slide-env-2.jpg" alt=""></li>
-
+    <% ['saveanacre.jpg', 'parkpersonality.jpg', 'calendars.jpg', 'amani.jpg', 'cookietins.jpg'].each do |file_name| %>
+      <li><%= image_tag "portfolio/#{file_name}" %></li>
+    <% end %>
   </ul>
-
-  <!-- END AnythingSlider -->
-
-</body>
 
 </section>
 
+<!-- Contact. -->
 <section id="contact">
    <header>
       <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA design isn’t finished until somebody is using it. &nbsp&nbsp&nbsp<font size="1.75">— Brenda Laurel</font></h1>
