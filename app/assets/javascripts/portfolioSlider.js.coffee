@@ -1,4 +1,4 @@
-# http://css-tricks.com/examples/AnythingSlider/
+# https://github.com/ProLoser/AnythingSlider/
 $ ->
   $('#slider').anythingSlider
     autoPlay: true
