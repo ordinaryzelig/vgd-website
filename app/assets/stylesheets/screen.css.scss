@@ -22,7 +22,7 @@ body {
 	background-image: image-url('background.jpg');
 	color: $font-color;
 /*	font-family: 'Quattrocento Sans', sans-serif;*/
-	font-family: "futura-pt",sans-serif;
+	font-family: $font_family;
 	font-weight: 100;
 	strong {
   font-weight: 400;
