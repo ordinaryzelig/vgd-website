@@ -2,6 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '3.1.3'
 
+gem 'anything_slider-rails', '0.0.3'
 gem 'haml-rails', '0.3.4'
 gem 'jquery-rails', '1.0.19'
 gem 'rack-canonical-host', '0.0.3'
