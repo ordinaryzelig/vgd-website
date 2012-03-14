@@ -8,3 +8,4 @@
 //= require jquery_ujs
 //= require anythingslider/jquery.anythingslider
 //= require_tree .
+//= require jquery.smooth-scroll
