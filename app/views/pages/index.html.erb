@@ -22,11 +22,24 @@
     <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The best way to predict the future is to design it.&nbsp;&nbsp;&nbsp;<span style="font-size: 1.75">— Buckminster Fuller</span></h1>
   </header>
 
+  <% portfolio_images = ['saveanacre.jpg', 'parkpersonality.jpg', 'sequoia.jpg', 'calendars.jpg', 'amani.jpg', 'cookietins.jpg'] %>
+
+  <%# Slider. %>
   <ul id="slider">
-    <% ['saveanacre.jpg', 'parkpersonality.jpg', 'sequoia.jpg', 'calendars.jpg', 'amani.jpg', 'cookietins.jpg'].each do |file_name| %>
+    <% portfolio_images.each do |file_name| %>
       <li><%= image_tag "portfolio/#{file_name}" %></li>
     <% end %>
   </ul>
+
+  <%# Image descriptions. %>
+  <div id="portfolio_descriptions" data-size="<%= portfolio_images.size %>">
+    <% portfolio_images.each_with_index do |file_name, idx| %>
+      <%# Enumerate starting at 1 because slider does too. %>
+      <div class="portfolio_description" id="portfolio_description_<%= idx + 1 %>">
+        <%= render "pages/portfolio/#{file_name.sub(%r[.jpg], '')}" %>
+      </div>
+    <% end %>
+  </div>
 
 </section>
 

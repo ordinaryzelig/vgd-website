@@ -178,3 +178,15 @@ $slider-margin-side: 60px;
     top: ($slider-height / 2) - (image-height('right-arrow.png') / 2) + $header-height + $section-header-height + $slider-margin-top;
   }
 }*/
+
+#portfolio_descriptions {
+  clear: left;
+
+  .portfolio_description {
+    // portfolio_descriptions will be toggled along with slider.
+    // Start with all but first one hidden.
+    &:not(:first-child) {
+      display: none;
+    }
+  }
+}
