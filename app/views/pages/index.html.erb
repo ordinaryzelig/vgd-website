@@ -9,9 +9,9 @@
   </div>
 
   <ul id="socialmedia">
-    <li class="twitter"><a href="http://twitter.com/venturagd"target="_blank"><%= image_tag 'twitter.png' %></a></li>
-    <li class="facebook"><a href="http://facebook.com/venturagd/"target="_blank"><%= image_tag 'facebook.png' %></a></li>
-    <li class="linkedin"><a href="http://www.linkedin.com/company/ventura-graphic-design"target="_blank"><%= image_tag 'linkedin.png' %></a></li>
+    <li class="twitter"><a href="http://twitter.com/venturagd" target="_blank"><%= image_tag 'twitter.png' %></a></li>
+    <li class="facebook"><a href="http://facebook.com/venturagd/" target="_blank"><%= image_tag 'facebook.png' %></a></li>
+    <li class="linkedin"><a href="http://www.linkedin.com/company/ventura-graphic-design" target="_blank"><%= image_tag 'linkedin.png' %></a></li>
   </ul>
 </section>
 
@@ -19,7 +19,7 @@
 <section id="portfolio">
 
   <header>
-    <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspThe best way to predict the future is to design it.&nbsp&nbsp&nbsp<font size="1.75">— Buckminster Fuller</font></h1>
+    <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The best way to predict the future is to design it.&nbsp;&nbsp;&nbsp;<span style="font-size: 1.75">— Buckminster Fuller</span></h1>
   </header>
 
   <ul id="slider">
@@ -33,30 +33,36 @@
 <!-- Contact. -->
 <section id="contact">
    <header>
-      <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspA design isn’t finished until somebody is using it. &nbsp&nbsp&nbsp<font size="1.75">— Brenda Laurel</font></h1>
+      <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A design isn’t finished until somebody is using it. &nbsp;&nbsp;&nbsp;<span style="font-size: 1.75">— Brenda Laurel</span></h1>
     </header>
   <div class="prose">
     <p>
-      If you’re excited about the future of your organization, then I’m excited to help you get there. <p>Let’s talk soon about how we can work together. </p>
+      If you’re excited about the future of your organization, then I’m excited to help you get there. <p>Let’s talk soon about how we can work together.
     </p>
     <p>
-    <a href="mailto:hello@venturagraphicdesign.com"><image style="padding: 0px 10px 0px 0px;margin-bottom:-4px;"<%= image_tag 'envelope.png' %>
-    <%= mail_to 'hello@venturagraphicdesign.com', nil, :encode => 'javascript' %>
+    <a href="mailto:hello@venturagraphicdesign.com"><%= image_tag 'envelope.png', style: 'padding: 0px 10px 0px 0px;margin-bottom:-4px;' %></a>
+      <%= mail_to 'hello@venturagraphicdesign.com', nil, :encode => 'javascript' %>
     </p>
     <p>
-      <image style="padding: 0px 15px 0px 5px;margin-bottom:-10px;"<%= image_tag 'phone.png' %>(415) 710–1301
+      <%= image_tag 'phone.png', style: 'padding: 0px 15px 0px 5px;margin-bottom:-10px;' %>(415) 710–1301
     </p>
-    <a href="http://twitter.com/venturagd"target="_blank"><image style="padding-left:1px;"><%= image_tag 'twitter.png' %><font style="position: relative; top: -10px;
-    ">&nbsp&nbsp&nbsptwitter.com/venturagd&nbsp&nbsp&nbsp&nbsp</a> </font>
+    <a href="http://twitter.com/venturagd" target="_blank">
+      <%= image_tag 'twitter.png', style: 'padding-left:1px;' %>
+      <span style="position: relative; top: -10px;">&nbsp;&nbsp;&nbsp;twitter.com/venturagd&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </a>
 
-   <a href="http://facebook.com/venturagd/"target="_blank"><%= image_tag 'facebook.png' %> <font style="position: relative; top: -10px;
-    ">&nbsp&nbspfb.com/venturagd&nbsp&nbsp&nbsp&nbsp</a></image></font>
+    <a href="http://facebook.com/venturagd/" target="_blank">
+      <%= image_tag 'facebook.png' %>
+      <span style="position: relative; top: -10px;">&nbsp;&nbsp;fb.com/venturagd&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </a>
 
-    <a href="http://www.linkedin.com/in/venturagd"target="_blank"><%= image_tag 'linkedin.png' %><font style="position: relative; top: -10px;
-    ">&nbsp&nbsp&nbsplinkedin.com/in/venturagd</a></image></font>
+    <a href="http://www.linkedin.com/in/venturagd" target="_blank">
+      <%= image_tag 'linkedin.png' %>
+      <span style="position: relative; top: -10px;">&nbsp;&nbsp;&nbsp;linkedin.com/in/venturagd</span>
+    </a>
 
    <br> <p>
-     <font style="text-transform: uppercase;font-size: 15px;  letter-spacing: 0.3em;position: relative; top: 30px;"><strong>Want to see more of my work? </strong></font><br><font style="position: relative; top: 30px;">Feel free to contact me and I’d be happy to email you my full portfolio.</font>
+     <span style="text-transform: uppercase;span-size: 15px;  letter-spacing: 0.3em;position: relative; top: 30px;"><strong>Want to see more of my work? </strong></span><br><span style="position: relative; top: 30px;">Feel free to contact me and I’d be happy to email you my full portfolio.</span>
     </p>
   </div>
 </section>
