@@ -93,14 +93,15 @@ header.main {
 
 #content {
   margin-top: $header-height;
+  height: 2450px;
 }
 
 $section-header-height: 40px;
 section {
-	min-height: 766px;
+	min-height: 720px;
   // Prevent anchor scrolling to disappear behind header.
   margin-top: -$header-height;
-  padding-top: $header-height - 1;
+  padding-top: $header-height ;
 	
 	header {
 	/*background-image: image-url('background-header.jpg');*/
