@@ -12,6 +12,7 @@ $ ->
     autoPlay: true
     hashTags: false # Don't change URL.
     buildStartStop: false
+    delay: 5000 # miliseconds between slides.
 
   # When slider slides, show description for that image.
   # When slide begins, hide visible descriptions.
