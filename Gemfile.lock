@@ -90,6 +90,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    newrelic_rpm (3.3.3)
     nokogiri (1.5.0)
     pg (0.12.0)
       rake-compiler (~> 0.7)
@@ -189,6 +190,7 @@ DEPENDENCIES
   haml-rails (= 0.3.4)
   heroku
   jquery-rails (= 1.0.19)
+  newrelic_rpm
   pg
   rack-canonical-host (= 0.0.3)
   rails (= 3.1.3)

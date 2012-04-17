@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+gem 'newrelic_rpm'
+
 gem 'rails', '3.1.3'
 
 gem 'anything_slider-rails', '0.0.3'
